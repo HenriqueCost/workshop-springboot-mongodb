@@ -1,6 +1,7 @@
 package com.henriquecosta.workshopmongo.dto;
 
 import java.io.Serializable;
+import java.util.Optional;
 
 import com.henriquecosta.workshopmongo.domain.User;
 
@@ -11,7 +12,7 @@ public class UserDTO implements Serializable {
 	private String name;
 	private String email;
 	
-	public UserDTO() {
+	public UserDTO(Optional<User> obj) {
 	}
 	
 	public UserDTO(User obj) {
